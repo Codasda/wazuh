@@ -1,0 +1,562 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "ports": [
+                {
+                    "inode": 16343,
+                    "local_ip": "127.0.0.53",
+                    "local_port": 53,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "udp",
+                    "remote_ip": "0.0.0.0",
+                    "remote_port": 0,
+                    "rx_queue": 0,
+                    "state": "",
+                    "tx_queue": 0
+                },
+                {
+                    "inode": 4284236,
+                    "local_ip": "172.28.128.3",
+                    "local_port": 68,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "udp",
+                    "remote_ip": "0.0.0.0",
+                    "remote_port": 0,
+                    "rx_queue": 0,
+                    "state": "",
+                    "tx_queue": 0
+                },
+                {
+                    "inode": 2911328,
+                    "local_ip": "10.0.2.15",
+                    "local_port": 68,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "udp",
+                    "remote_ip": "0.0.0.0",
+                    "remote_port": 0,
+                    "rx_queue": 0,
+                    "state": "",
+                    "tx_queue": 0
+                },
+                {
+                    "inode": 11076,
+                    "local_ip": "0.0.0.0",
+                    "local_port": 111,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "udp",
+                    "remote_ip": "0.0.0.0",
+                    "remote_port": 0,
+                    "rx_queue": 0,
+                    "state": "",
+                    "tx_queue": 0
+                },
+                {
+                    "inode": 11079,
+                    "local_ip": "::",
+                    "local_port": 111,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "udp6",
+                    "remote_ip": "::",
+                    "remote_port": 0,
+                    "rx_queue": 0,
+                    "state": "",
+                    "tx_queue": 0
+                },
+                {
+                    "inode": 17455,
+                    "local_ip": "0.0.0.0",
+                    "local_port": 111,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "tcp",
+                    "remote_ip": "0.0.0.0",
+                    "remote_port": 0,
+                    "rx_queue": 0,
+                    "state": "listening",
+                    "tx_queue": 0
+                },
+                {
+                    "inode": 48936,
+                    "local_ip": "127.0.0.1",
+                    "local_port": 45971,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "tcp",
+                    "remote_ip": "0.0.0.0",
+                    "remote_port": 0,
+                    "rx_queue": 0,
+                    "state": "listening",
+                    "tx_queue": 0
+                },
+                {
+                    "inode": 16344,
+                    "local_ip": "127.0.0.53",
+                    "local_port": 53,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "tcp",
+                    "remote_ip": "0.0.0.0",
+                    "remote_port": 0,
+                    "rx_queue": 0,
+                    "state": "listening",
+                    "tx_queue": 0
+                },
+                {
+                    "inode": 26971,
+                    "local_ip": "0.0.0.0",
+                    "local_port": 22,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "tcp",
+                    "remote_ip": "0.0.0.0",
+                    "remote_port": 0,
+                    "rx_queue": 0,
+                    "state": "listening",
+                    "tx_queue": 0
+                },
+                {
+                    "inode": 3814421,
+                    "local_ip": "0.0.0.0",
+                    "local_port": 55000,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "tcp",
+                    "remote_ip": "0.0.0.0",
+                    "remote_port": 0,
+                    "rx_queue": 0,
+                    "state": "listening",
+                    "tx_queue": 0
+                },
+                {
+                    "inode": 19268,
+                    "local_ip": "127.0.0.1",
+                    "local_port": 40665,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "tcp",
+                    "remote_ip": "0.0.0.0",
+                    "remote_port": 0,
+                    "rx_queue": 0,
+                    "state": "listening",
+                    "tx_queue": 0
+                },
+                {
+                    "inode": 28495,
+                    "local_ip": "127.0.0.1",
+                    "local_port": 5601,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "tcp",
+                    "remote_ip": "0.0.0.0",
+                    "remote_port": 0,
+                    "rx_queue": 0,
+                    "state": "listening",
+                    "tx_queue": 0
+                },
+                {
+                    "inode": 3809150,
+                    "local_ip": "0.0.0.0",
+                    "local_port": 1514,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "tcp",
+                    "remote_ip": "0.0.0.0",
+                    "remote_port": 0,
+                    "rx_queue": 0,
+                    "state": "listening",
+                    "tx_queue": 0
+                },
+                {
+                    "inode": 3813322,
+                    "local_ip": "0.0.0.0",
+                    "local_port": 1515,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "tcp",
+                    "remote_ip": "0.0.0.0",
+                    "remote_port": 0,
+                    "rx_queue": 0,
+                    "state": "listening",
+                    "tx_queue": 0
+                },
+                {
+                    "inode": 3940261,
+                    "local_ip": "127.0.0.1",
+                    "local_port": 45971,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "tcp",
+                    "remote_ip": "127.0.0.1",
+                    "remote_port": 57964,
+                    "rx_queue": 0,
+                    "state": "established",
+                    "tx_queue": 0
+                },
+                {
+                    "inode": 3965621,
+                    "local_ip": "127.0.0.1",
+                    "local_port": 57964,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "tcp",
+                    "remote_ip": "127.0.0.1",
+                    "remote_port": 45971,
+                    "rx_queue": 0,
+                    "state": "established",
+                    "tx_queue": 0
+                },
+                {
+                    "inode": 3973584,
+                    "local_ip": "10.0.2.15",
+                    "local_port": 46410,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "tcp",
+                    "remote_ip": "20.62.133.85",
+                    "remote_port": 443,
+                    "rx_queue": 0,
+                    "state": "established",
+                    "tx_queue": 0
+                },
+                {
+                    "inode": 3965620,
+                    "local_ip": "127.0.0.1",
+                    "local_port": 57962,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "tcp",
+                    "remote_ip": "127.0.0.1",
+                    "remote_port": 45971,
+                    "rx_queue": 0,
+                    "state": "established",
+                    "tx_queue": 0
+                },
+                {
+                    "inode": 3940259,
+                    "local_ip": "127.0.0.1",
+                    "local_port": 45971,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "tcp",
+                    "remote_ip": "127.0.0.1",
+                    "remote_port": 57962,
+                    "rx_queue": 0,
+                    "state": "established",
+                    "tx_queue": 0
+                },
+                {
+                    "inode": 3820427,
+                    "local_ip": "172.28.128.3",
+                    "local_port": 22,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "tcp",
+                    "remote_ip": "172.28.128.1",
+                    "remote_port": 57842,
+                    "rx_queue": 0,
+                    "state": "established",
+                    "tx_queue": 0
+                },
+                {
+                    "inode": 4279527,
+                    "local_ip": "10.0.2.15",
+                    "local_port": 49292,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "tcp",
+                    "remote_ip": "99.83.135.170",
+                    "remote_port": 443,
+                    "rx_queue": 0,
+                    "state": "established",
+                    "tx_queue": 0
+                },
+                {
+                    "inode": 371556,
+                    "local_ip": "10.0.2.15",
+                    "local_port": 22,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "tcp",
+                    "remote_ip": "10.0.2.2",
+                    "remote_port": 55998,
+                    "rx_queue": 0,
+                    "state": "established",
+                    "tx_queue": 0
+                },
+                {
+                    "inode": 17458,
+                    "local_ip": "::",
+                    "local_port": 111,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "tcp6",
+                    "remote_ip": "::",
+                    "remote_port": 0,
+                    "rx_queue": 0,
+                    "state": "listening",
+                    "tx_queue": 0
+                },
+                {
+                    "inode": 24560,
+                    "local_ip": "::",
+                    "local_port": 9650,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "tcp6",
+                    "remote_ip": "::",
+                    "remote_port": 0,
+                    "rx_queue": 0,
+                    "state": "listening",
+                    "tx_queue": 0
+                },
+                {
+                    "inode": 20013,
+                    "local_ip": "::",
+                    "local_port": 21,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "tcp6",
+                    "remote_ip": "::",
+                    "remote_port": 0,
+                    "rx_queue": 0,
+                    "state": "listening",
+                    "tx_queue": 0
+                },
+                {
+                    "inode": 26973,
+                    "local_ip": "::",
+                    "local_port": 22,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "tcp6",
+                    "remote_ip": "::",
+                    "remote_port": 0,
+                    "rx_queue": 0,
+                    "state": "listening",
+                    "tx_queue": 0
+                },
+                {
+                    "inode": 24538,
+                    "local_ip": "::ffff:127.0.0.1",
+                    "local_port": 9600,
+                    "pid": 0,
+                    "process": "",
+                    "protocol": "tcp6",
+                    "remote_ip": "::",
+                    "remote_port": 0,
+                    "rx_queue": 0,
+                    "state": "listening",
+                    "tx_queue": 0
+                }
+            ]
+        }
+    ],
+    "required": [
+        "ports"
+    ],
+    "properties": {
+        "ports": {
+            "$id": "#/properties/ports",
+            "type": "array",
+            "title": "The ports schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "inode": 16343,
+                        "local_ip": "127.0.0.53",
+                        "local_port": 53,
+                        "pid": 0,
+                        "process": "",
+                        "protocol": "udp",
+                        "remote_ip": "0.0.0.0",
+                        "remote_port": 0,
+                        "rx_queue": 0,
+                        "state": "",
+                        "tx_queue": 0
+                    },
+                    {
+                        "inode": 4284236,
+                        "local_ip": "172.28.128.3",
+                        "local_port": 68,
+                        "pid": 0,
+                        "process": "",
+                        "protocol": "udp",
+                        "remote_ip": "0.0.0.0",
+                        "remote_port": 0,
+                        "rx_queue": 0,
+                        "state": "",
+                        "tx_queue": 0
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/ports/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/ports/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "inode": 16343,
+                                "local_ip": "127.0.0.53",
+                                "local_port": 53,
+                                "pid": 0,
+                                "process": "",
+                                "protocol": "udp",
+                                "remote_ip": "0.0.0.0",
+                                "remote_port": 0,
+                                "rx_queue": 0,
+                                "state": "",
+                                "tx_queue": 0
+                            }
+                        ],
+                        "required": [
+                            "inode",
+                            "local_ip",
+                            "local_port",
+                            "pid",
+                            "process",
+                            "protocol",
+                            "remote_ip",
+                            "remote_port",
+                            "rx_queue",
+                            "state",
+                            "tx_queue"
+                        ],
+                        "properties": {
+                            "inode": {
+                                "$id": "#/properties/ports/items/anyOf/0/properties/inode",
+                                "type": "integer",
+                                "title": "The inode schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    16343
+                                ]
+                            },
+                            "local_ip": {
+                                "$id": "#/properties/ports/items/anyOf/0/properties/local_ip",
+                                "type": "string",
+                                "title": "The local_ip schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "127.0.0.53"
+                                ]
+                            },
+                            "local_port": {
+                                "$id": "#/properties/ports/items/anyOf/0/properties/local_port",
+                                "type": "integer",
+                                "title": "The local_port schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    53
+                                ]
+                            },
+                            "pid": {
+                                "$id": "#/properties/ports/items/anyOf/0/properties/pid",
+                                "type": "integer",
+                                "title": "The pid schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    0
+                                ]
+                            },
+                            "process": {
+                                "$id": "#/properties/ports/items/anyOf/0/properties/process",
+                                "type": "string",
+                                "title": "The process schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    ""
+                                ]
+                            },
+                            "protocol": {
+                                "$id": "#/properties/ports/items/anyOf/0/properties/protocol",
+                                "type": "string",
+                                "title": "The protocol schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "udp"
+                                ]
+                            },
+                            "remote_ip": {
+                                "$id": "#/properties/ports/items/anyOf/0/properties/remote_ip",
+                                "type": "string",
+                                "title": "The remote_ip schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "0.0.0.0"
+                                ]
+                            },
+                            "remote_port": {
+                                "$id": "#/properties/ports/items/anyOf/0/properties/remote_port",
+                                "type": "integer",
+                                "title": "The remote_port schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    0
+                                ]
+                            },
+                            "rx_queue": {
+                                "$id": "#/properties/ports/items/anyOf/0/properties/rx_queue",
+                                "type": "integer",
+                                "title": "The rx_queue schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    0
+                                ]
+                            },
+                            "state": {
+                                "$id": "#/properties/ports/items/anyOf/0/properties/state",
+                                "type": "string",
+                                "title": "The state schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    ""
+                                ]
+                            },
+                            "tx_queue": {
+                                "$id": "#/properties/ports/items/anyOf/0/properties/tx_queue",
+                                "type": "integer",
+                                "title": "The tx_queue schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    0
+                                ]
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        }
+    },
+    "additionalProperties": true
+}

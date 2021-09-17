@@ -1,0 +1,9 @@
+{
+    "data_provider": {
+        "os":"data_provider/os.schema",
+        "processes":"data_provider/processes.schema",
+        "networks":"data_provider/networks.schema",
+        "hw":"data_provider/hw.schema",
+        "ports":"data_provider/ports.schema"
+    }
+}

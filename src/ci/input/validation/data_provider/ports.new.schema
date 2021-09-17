@@ -1,0 +1,192 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": [],
+    "examples": [
+        [
+            {
+                "inode": 2409855,
+                "local_ip": "172.28.128.3",
+                "local_port": 68,
+                "pid": 0,
+                "process": "",
+                "protocol": "udp",
+                "remote_ip": "0.0.0.0",
+                "remote_port": 0,
+                "rx_queue": 0,
+                "state": "",
+                "tx_queue": 0
+            },
+            {
+                "inode": 1701336,
+                "local_ip": "10.0.2.15",
+                "local_port": 68,
+                "pid": 0,
+                "process": "",
+                "protocol": "udp",
+                "remote_ip": "0.0.0.0",
+                "remote_port": 0,
+                "rx_queue": 0,
+                "state": "",
+                "tx_queue": 0
+            }
+        ]
+    ],
+    "additionalItems": true,
+    "items": {
+        "$id": "#/items",
+        "anyOf": [
+            {
+                "$id": "#/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "inode": 2409855,
+                        "local_ip": "172.28.128.3",
+                        "local_port": 68,
+                        "pid": 0,
+                        "process": "",
+                        "protocol": "udp",
+                        "remote_ip": "0.0.0.0",
+                        "remote_port": 0,
+                        "rx_queue": 0,
+                        "state": "",
+                        "tx_queue": 0
+                    }
+                ],
+                "required": [
+                    "inode",
+                    "local_ip",
+                    "local_port",
+                    "pid",
+                    "process",
+                    "protocol",
+                    "remote_ip",
+                    "remote_port",
+                    "rx_queue",
+                    "state",
+                    "tx_queue"
+                ],
+                "properties": {
+                    "inode": {
+                        "$id": "#/items/anyOf/0/properties/inode",
+                        "type": "integer",
+                        "title": "The inode schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                            2409855
+                        ]
+                    },
+                    "local_ip": {
+                        "$id": "#/items/anyOf/0/properties/local_ip",
+                        "type": "string",
+                        "title": "The local_ip schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "172.28.128.3"
+                        ]
+                    },
+                    "local_port": {
+                        "$id": "#/items/anyOf/0/properties/local_port",
+                        "type": "integer",
+                        "title": "The local_port schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                            68
+                        ]
+                    },
+                    "pid": {
+                        "$id": "#/items/anyOf/0/properties/pid",
+                        "type": "integer",
+                        "title": "The pid schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                            0
+                        ]
+                    },
+                    "process": {
+                        "$id": "#/items/anyOf/0/properties/process",
+                        "type": "string",
+                        "title": "The process schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            ""
+                        ]
+                    },
+                    "protocol": {
+                        "$id": "#/items/anyOf/0/properties/protocol",
+                        "type": "string",
+                        "title": "The protocol schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "udp"
+                        ]
+                    },
+                    "remote_ip": {
+                        "$id": "#/items/anyOf/0/properties/remote_ip",
+                        "type": "string",
+                        "title": "The remote_ip schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "0.0.0.0"
+                        ]
+                    },
+                    "remote_port": {
+                        "$id": "#/items/anyOf/0/properties/remote_port",
+                        "type": "integer",
+                        "title": "The remote_port schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                            0
+                        ]
+                    },
+                    "rx_queue": {
+                        "$id": "#/items/anyOf/0/properties/rx_queue",
+                        "type": "integer",
+                        "title": "The rx_queue schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                            0
+                        ]
+                    },
+                    "state": {
+                        "$id": "#/items/anyOf/0/properties/state",
+                        "type": "string",
+                        "title": "The state schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            ""
+                        ]
+                    },
+                    "tx_queue": {
+                        "$id": "#/items/anyOf/0/properties/tx_queue",
+                        "type": "integer",
+                        "title": "The tx_queue schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                            0
+                        ]
+                    }
+                },
+                "additionalProperties": true
+            }
+        ]
+    }
+}

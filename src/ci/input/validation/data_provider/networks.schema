@@ -1,0 +1,628 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "iface": [
+                {
+                    "IPv4": [
+                        {
+                            "address": "10.0.2.15",
+                            "broadcast": "10.0.2.255",
+                            "dhcp": "unknown",
+                            "metric": "100",
+                            "netmask": "255.255.255.0"
+                        }
+                    ],
+                    "IPv6": [
+                        {
+                            "address": "fe80::a00:27ff:fe2f:66f7",
+                            "broadcast": "",
+                            "dhcp": "unknown",
+                            "metric": "",
+                            "netmask": "ffff:ffff:ffff:ffff::"
+                        }
+                    ],
+                    "adapter": "",
+                    "gateway": "10.0.2.2",
+                    "mac": "08:00:27:2f:66:f7",
+                    "mtu": 1500,
+                    "name": "eth0",
+                    "rx_bytes": 49545484,
+                    "rx_dropped": 0,
+                    "rx_errors": 0,
+                    "rx_packets": 72061,
+                    "state": "up",
+                    "tx_bytes": 20415241,
+                    "tx_dropped": 0,
+                    "tx_errors": 0,
+                    "tx_packets": 53777,
+                    "type": "ethernet"
+                },
+                {
+                    "IPv4": [
+                        {
+                            "address": "172.28.128.3",
+                            "broadcast": "172.28.128.255",
+                            "dhcp": "unknown",
+                            "metric": "0",
+                            "netmask": "255.255.255.0"
+                        }
+                    ],
+                    "IPv6": [
+                        {
+                            "address": "fe80::a00:27ff:fe87:1844",
+                            "broadcast": "",
+                            "dhcp": "unknown",
+                            "metric": "",
+                            "netmask": "ffff:ffff:ffff:ffff::"
+                        }
+                    ],
+                    "adapter": "",
+                    "gateway": " ",
+                    "mac": "08:00:27:87:18:44",
+                    "mtu": 1500,
+                    "name": "eth1",
+                    "rx_bytes": 23519105,
+                    "rx_dropped": 0,
+                    "rx_errors": 0,
+                    "rx_packets": 175131,
+                    "state": "up",
+                    "tx_bytes": 54791871,
+                    "tx_dropped": 0,
+                    "tx_errors": 0,
+                    "tx_packets": 179455,
+                    "type": "ethernet"
+                },
+                {
+                    "IPv4": [
+                        {
+                            "address": "192.168.100.60",
+                            "broadcast": "192.168.100.255",
+                            "dhcp": "unknown",
+                            "metric": "0",
+                            "netmask": "255.255.255.0"
+                        }
+                    ],
+                    "IPv6": [
+                        {
+                            "address": "fe80::a00:27ff:fe20:544a",
+                            "broadcast": "",
+                            "dhcp": "unknown",
+                            "metric": "",
+                            "netmask": "ffff:ffff:ffff:ffff::"
+                        }
+                    ],
+                    "adapter": "",
+                    "gateway": " ",
+                    "mac": "08:00:27:20:54:4a",
+                    "mtu": 1500,
+                    "name": "eth2",
+                    "rx_bytes": 91866,
+                    "rx_dropped": 0,
+                    "rx_errors": 0,
+                    "rx_packets": 1068,
+                    "state": "up",
+                    "tx_bytes": 4806,
+                    "tx_dropped": 0,
+                    "tx_errors": 0,
+                    "tx_packets": 65,
+                    "type": "ethernet"
+                }
+            ]
+        }
+    ],
+    "required": [
+        "iface"
+    ],
+    "properties": {
+        "iface": {
+            "$id": "#/properties/iface",
+            "type": "array",
+            "title": "The iface schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "IPv4": [
+                            {
+                                "address": "10.0.2.15",
+                                "broadcast": "10.0.2.255",
+                                "dhcp": "unknown",
+                                "metric": "100",
+                                "netmask": "255.255.255.0"
+                            }
+                        ],
+                        "IPv6": [
+                            {
+                                "address": "fe80::a00:27ff:fe2f:66f7",
+                                "broadcast": "",
+                                "dhcp": "unknown",
+                                "metric": "",
+                                "netmask": "ffff:ffff:ffff:ffff::"
+                            }
+                        ],
+                        "adapter": "",
+                        "gateway": "10.0.2.2",
+                        "mac": "08:00:27:2f:66:f7",
+                        "mtu": 1500,
+                        "name": "eth0",
+                        "rx_bytes": 49545484,
+                        "rx_dropped": 0,
+                        "rx_errors": 0,
+                        "rx_packets": 72061,
+                        "state": "up",
+                        "tx_bytes": 20415241,
+                        "tx_dropped": 0,
+                        "tx_errors": 0,
+                        "tx_packets": 53777,
+                        "type": "ethernet"
+                    },
+                    {
+                        "IPv4": [
+                            {
+                                "address": "172.28.128.3",
+                                "broadcast": "172.28.128.255",
+                                "dhcp": "unknown",
+                                "metric": "0",
+                                "netmask": "255.255.255.0"
+                            }
+                        ],
+                        "IPv6": [
+                            {
+                                "address": "fe80::a00:27ff:fe87:1844",
+                                "broadcast": "",
+                                "dhcp": "unknown",
+                                "metric": "",
+                                "netmask": "ffff:ffff:ffff:ffff::"
+                            }
+                        ],
+                        "adapter": "",
+                        "gateway": " ",
+                        "mac": "08:00:27:87:18:44",
+                        "mtu": 1500,
+                        "name": "eth1",
+                        "rx_bytes": 23519105,
+                        "rx_dropped": 0,
+                        "rx_errors": 0,
+                        "rx_packets": 175131,
+                        "state": "up",
+                        "tx_bytes": 54791871,
+                        "tx_dropped": 0,
+                        "tx_errors": 0,
+                        "tx_packets": 179455,
+                        "type": "ethernet"
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/iface/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/iface/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "IPv4": [
+                                    {
+                                        "address": "10.0.2.15",
+                                        "broadcast": "10.0.2.255",
+                                        "dhcp": "unknown",
+                                        "metric": "100",
+                                        "netmask": "255.255.255.0"
+                                    }
+                                ],
+                                "IPv6": [
+                                    {
+                                        "address": "fe80::a00:27ff:fe2f:66f7",
+                                        "broadcast": "",
+                                        "dhcp": "unknown",
+                                        "metric": "",
+                                        "netmask": "ffff:ffff:ffff:ffff::"
+                                    }
+                                ],
+                                "adapter": "",
+                                "gateway": "10.0.2.2",
+                                "mac": "08:00:27:2f:66:f7",
+                                "mtu": 1500,
+                                "name": "eth0",
+                                "rx_bytes": 49545484,
+                                "rx_dropped": 0,
+                                "rx_errors": 0,
+                                "rx_packets": 72061,
+                                "state": "up",
+                                "tx_bytes": 20415241,
+                                "tx_dropped": 0,
+                                "tx_errors": 0,
+                                "tx_packets": 53777,
+                                "type": "ethernet"
+                            }
+                        ],
+                        "required": [
+                            "IPv4",
+                            "IPv6",
+                            "adapter",
+                            "gateway",
+                            "mac",
+                            "mtu",
+                            "name",
+                            "rx_bytes",
+                            "rx_dropped",
+                            "rx_errors",
+                            "rx_packets",
+                            "state",
+                            "tx_bytes",
+                            "tx_dropped",
+                            "tx_errors",
+                            "tx_packets",
+                            "type"
+                        ],
+                        "properties": {
+                            "IPv4": {
+                                "$id": "#/properties/iface/items/anyOf/0/properties/IPv4",
+                                "type": "array",
+                                "title": "The IPv4 schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": [],
+                                "examples": [
+                                    [
+                                        {
+                                            "address": "10.0.2.15",
+                                            "broadcast": "10.0.2.255",
+                                            "dhcp": "unknown",
+                                            "metric": "100",
+                                            "netmask": "255.255.255.0"
+                                        }
+                                    ]
+                                ],
+                                "additionalItems": true,
+                                "items": {
+                                    "$id": "#/properties/iface/items/anyOf/0/properties/IPv4/items",
+                                    "anyOf": [
+                                        {
+                                            "$id": "#/properties/iface/items/anyOf/0/properties/IPv4/items/anyOf/0",
+                                            "type": "object",
+                                            "title": "The first anyOf schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": {},
+                                            "examples": [
+                                                {
+                                                    "address": "10.0.2.15",
+                                                    "broadcast": "10.0.2.255",
+                                                    "dhcp": "unknown",
+                                                    "metric": "100",
+                                                    "netmask": "255.255.255.0"
+                                                }
+                                            ],
+                                            "required": [
+                                                "address",
+                                                "broadcast",
+                                                "dhcp",
+                                                "metric",
+                                                "netmask"
+                                            ],
+                                            "properties": {
+                                                "address": {
+                                                    "$id": "#/properties/iface/items/anyOf/0/properties/IPv4/items/anyOf/0/properties/address",
+                                                    "type": "string",
+                                                    "title": "The address schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "10.0.2.15"
+                                                    ]
+                                                },
+                                                "broadcast": {
+                                                    "$id": "#/properties/iface/items/anyOf/0/properties/IPv4/items/anyOf/0/properties/broadcast",
+                                                    "type": "string",
+                                                    "title": "The broadcast schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "10.0.2.255"
+                                                    ]
+                                                },
+                                                "dhcp": {
+                                                    "$id": "#/properties/iface/items/anyOf/0/properties/IPv4/items/anyOf/0/properties/dhcp",
+                                                    "type": "string",
+                                                    "title": "The dhcp schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "unknown"
+                                                    ]
+                                                },
+                                                "metric": {
+                                                    "$id": "#/properties/iface/items/anyOf/0/properties/IPv4/items/anyOf/0/properties/metric",
+                                                    "type": "string",
+                                                    "title": "The metric schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "100"
+                                                    ]
+                                                },
+                                                "netmask": {
+                                                    "$id": "#/properties/iface/items/anyOf/0/properties/IPv4/items/anyOf/0/properties/netmask",
+                                                    "type": "string",
+                                                    "title": "The netmask schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "255.255.255.0"
+                                                    ]
+                                                }
+                                            },
+                                            "additionalProperties": true
+                                        }
+                                    ]
+                                }
+                            },
+                            "IPv6": {
+                                "$id": "#/properties/iface/items/anyOf/0/properties/IPv6",
+                                "type": "array",
+                                "title": "The IPv6 schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": [],
+                                "examples": [
+                                    [
+                                        {
+                                            "address": "fe80::a00:27ff:fe2f:66f7",
+                                            "broadcast": "",
+                                            "dhcp": "unknown",
+                                            "metric": "",
+                                            "netmask": "ffff:ffff:ffff:ffff::"
+                                        }
+                                    ]
+                                ],
+                                "additionalItems": true,
+                                "items": {
+                                    "$id": "#/properties/iface/items/anyOf/0/properties/IPv6/items",
+                                    "anyOf": [
+                                        {
+                                            "$id": "#/properties/iface/items/anyOf/0/properties/IPv6/items/anyOf/0",
+                                            "type": "object",
+                                            "title": "The first anyOf schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": {},
+                                            "examples": [
+                                                {
+                                                    "address": "fe80::a00:27ff:fe2f:66f7",
+                                                    "broadcast": "",
+                                                    "dhcp": "unknown",
+                                                    "metric": "",
+                                                    "netmask": "ffff:ffff:ffff:ffff::"
+                                                }
+                                            ],
+                                            "required": [
+                                                "address",
+                                                "broadcast",
+                                                "dhcp",
+                                                "metric",
+                                                "netmask"
+                                            ],
+                                            "properties": {
+                                                "address": {
+                                                    "$id": "#/properties/iface/items/anyOf/0/properties/IPv6/items/anyOf/0/properties/address",
+                                                    "type": "string",
+                                                    "title": "The address schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "fe80::a00:27ff:fe2f:66f7"
+                                                    ]
+                                                },
+                                                "broadcast": {
+                                                    "$id": "#/properties/iface/items/anyOf/0/properties/IPv6/items/anyOf/0/properties/broadcast",
+                                                    "type": "string",
+                                                    "title": "The broadcast schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        ""
+                                                    ]
+                                                },
+                                                "dhcp": {
+                                                    "$id": "#/properties/iface/items/anyOf/0/properties/IPv6/items/anyOf/0/properties/dhcp",
+                                                    "type": "string",
+                                                    "title": "The dhcp schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "unknown"
+                                                    ]
+                                                },
+                                                "metric": {
+                                                    "$id": "#/properties/iface/items/anyOf/0/properties/IPv6/items/anyOf/0/properties/metric",
+                                                    "type": "string",
+                                                    "title": "The metric schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        ""
+                                                    ]
+                                                },
+                                                "netmask": {
+                                                    "$id": "#/properties/iface/items/anyOf/0/properties/IPv6/items/anyOf/0/properties/netmask",
+                                                    "type": "string",
+                                                    "title": "The netmask schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "ffff:ffff:ffff:ffff::"
+                                                    ]
+                                                }
+                                            },
+                                            "additionalProperties": true
+                                        }
+                                    ]
+                                }
+                            },
+                            "adapter": {
+                                "$id": "#/properties/iface/items/anyOf/0/properties/adapter",
+                                "type": "string",
+                                "title": "The adapter schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    ""
+                                ]
+                            },
+                            "gateway": {
+                                "$id": "#/properties/iface/items/anyOf/0/properties/gateway",
+                                "type": "string",
+                                "title": "The gateway schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "10.0.2.2"
+                                ]
+                            },
+                            "mac": {
+                                "$id": "#/properties/iface/items/anyOf/0/properties/mac",
+                                "type": "string",
+                                "title": "The mac schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "08:00:27:2f:66:f7"
+                                ]
+                            },
+                            "mtu": {
+                                "$id": "#/properties/iface/items/anyOf/0/properties/mtu",
+                                "type": "integer",
+                                "title": "The mtu schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    1500
+                                ]
+                            },
+                            "name": {
+                                "$id": "#/properties/iface/items/anyOf/0/properties/name",
+                                "type": "string",
+                                "title": "The name schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "eth0"
+                                ]
+                            },
+                            "rx_bytes": {
+                                "$id": "#/properties/iface/items/anyOf/0/properties/rx_bytes",
+                                "type": "integer",
+                                "title": "The rx_bytes schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    49545484
+                                ]
+                            },
+                            "rx_dropped": {
+                                "$id": "#/properties/iface/items/anyOf/0/properties/rx_dropped",
+                                "type": "integer",
+                                "title": "The rx_dropped schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    0
+                                ]
+                            },
+                            "rx_errors": {
+                                "$id": "#/properties/iface/items/anyOf/0/properties/rx_errors",
+                                "type": "integer",
+                                "title": "The rx_errors schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    0
+                                ]
+                            },
+                            "rx_packets": {
+                                "$id": "#/properties/iface/items/anyOf/0/properties/rx_packets",
+                                "type": "integer",
+                                "title": "The rx_packets schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    72061
+                                ]
+                            },
+                            "state": {
+                                "$id": "#/properties/iface/items/anyOf/0/properties/state",
+                                "type": "string",
+                                "title": "The state schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "up"
+                                ]
+                            },
+                            "tx_bytes": {
+                                "$id": "#/properties/iface/items/anyOf/0/properties/tx_bytes",
+                                "type": "integer",
+                                "title": "The tx_bytes schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    20415241
+                                ]
+                            },
+                            "tx_dropped": {
+                                "$id": "#/properties/iface/items/anyOf/0/properties/tx_dropped",
+                                "type": "integer",
+                                "title": "The tx_dropped schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    0
+                                ]
+                            },
+                            "tx_errors": {
+                                "$id": "#/properties/iface/items/anyOf/0/properties/tx_errors",
+                                "type": "integer",
+                                "title": "The tx_errors schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    0
+                                ]
+                            },
+                            "tx_packets": {
+                                "$id": "#/properties/iface/items/anyOf/0/properties/tx_packets",
+                                "type": "integer",
+                                "title": "The tx_packets schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    53777
+                                ]
+                            },
+                            "type": {
+                                "$id": "#/properties/iface/items/anyOf/0/properties/type",
+                                "type": "string",
+                                "title": "The type schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "ethernet"
+                                ]
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        }
+    },
+    "additionalProperties": true
+}

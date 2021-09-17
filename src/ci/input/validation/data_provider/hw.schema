@@ -1,0 +1,101 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "board_serial": "0",
+            "cpu_cores": 8,
+            "cpu_mhz": 1697.0,
+            "cpu_name": "AMD Ryzen 7 PRO 4750U with Radeon Graphics",
+            "ram_free": 2120056,
+            "ram_total": 7957432,
+            "ram_usage": 74
+        }
+    ],
+    "required": [
+        "board_serial",
+        "cpu_cores",
+        "cpu_mhz",
+        "cpu_name",
+        "ram_free",
+        "ram_total",
+        "ram_usage"
+    ],
+    "properties": {
+        "board_serial": {
+            "$id": "#/properties/board_serial",
+            "type": "string",
+            "title": "The board_serial schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "0"
+            ]
+        },
+        "cpu_cores": {
+            "$id": "#/properties/cpu_cores",
+            "type": "integer",
+            "title": "The cpu_cores schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                8
+            ]
+        },
+        "cpu_mhz": {
+            "$id": "#/properties/cpu_mhz",
+            "type": "number",
+            "title": "The cpu_mhz schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [
+                1697.0
+            ]
+        },
+        "cpu_name": {
+            "$id": "#/properties/cpu_name",
+            "type": "string",
+            "title": "The cpu_name schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "AMD Ryzen 7 PRO 4750U with Radeon Graphics"
+            ]
+        },
+        "ram_free": {
+            "$id": "#/properties/ram_free",
+            "type": "integer",
+            "title": "The ram_free schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                2120056
+            ]
+        },
+        "ram_total": {
+            "$id": "#/properties/ram_total",
+            "type": "integer",
+            "title": "The ram_total schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                7957432
+            ]
+        },
+        "ram_usage": {
+            "$id": "#/properties/ram_usage",
+            "type": "integer",
+            "title": "The ram_usage schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                74
+            ]
+        }
+    },
+    "additionalProperties": true
+}

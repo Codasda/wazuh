@@ -1,0 +1,161 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "architecture": "x86_64",
+            "hostname": "wazuh-dev",
+            "os_codename": "focal",
+            "os_major": "20",
+            "os_minor": "04",
+            "os_name": "Ubuntu",
+            "os_patch": "1",
+            "os_platform": "ubuntu",
+            "os_version": "20.04.1 LTS (Focal Fossa)",
+            "release": "5.4.0-42-generic",
+            "sysname": "Linux",
+            "version": "#46-Ubuntu SMP Fri Jul 10 00:24:02 UTC 2020"
+        }
+    ],
+    "required": [
+        "architecture",
+        "hostname",
+        "os_codename",
+        "os_major",
+        "os_minor",
+        "os_name",
+        "os_patch",
+        "os_platform",
+        "os_version",
+        "release",
+        "sysname",
+        "version"
+    ],
+    "properties": {
+        "architecture": {
+            "$id": "#/properties/architecture",
+            "type": "string",
+            "title": "The architecture schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "x86_64"
+            ]
+        },
+        "hostname": {
+            "$id": "#/properties/hostname",
+            "type": "string",
+            "title": "The hostname schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "wazuh-dev"
+            ]
+        },
+        "os_codename": {
+            "$id": "#/properties/os_codename",
+            "type": "string",
+            "title": "The os_codename schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "focal"
+            ]
+        },
+        "os_major": {
+            "$id": "#/properties/os_major",
+            "type": "string",
+            "title": "The os_major schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "20"
+            ]
+        },
+        "os_minor": {
+            "$id": "#/properties/os_minor",
+            "type": "string",
+            "title": "The os_minor schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "04"
+            ]
+        },
+        "os_name": {
+            "$id": "#/properties/os_name",
+            "type": "string",
+            "title": "The os_name schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Ubuntu"
+            ]
+        },
+        "os_patch": {
+            "$id": "#/properties/os_patch",
+            "type": "string",
+            "title": "The os_patch schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "1"
+            ]
+        },
+        "os_platform": {
+            "$id": "#/properties/os_platform",
+            "type": "string",
+            "title": "The os_platform schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "ubuntu"
+            ]
+        },
+        "os_version": {
+            "$id": "#/properties/os_version",
+            "type": "string",
+            "title": "The os_version schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "20.04.1 LTS (Focal Fossa)"
+            ]
+        },
+        "release": {
+            "$id": "#/properties/release",
+            "type": "string",
+            "title": "The release schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "5.4.0-42-generic"
+            ]
+        },
+        "sysname": {
+            "$id": "#/properties/sysname",
+            "type": "string",
+            "title": "The sysname schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Linux"
+            ]
+        },
+        "version": {
+            "$id": "#/properties/version",
+            "type": "string",
+            "title": "The version schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "#46-Ubuntu SMP Fri Jul 10 00:24:02 UTC 2020"
+            ]
+        }
+    },
+    "additionalProperties": true
+}

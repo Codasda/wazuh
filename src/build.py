@@ -36,6 +36,7 @@ class CommandLineParser:
         parser.add_argument("-t", "--tests", help="Run tests (should be configured with TEST=on). Example: python3 build.py -t <data_provider|shared_modules/dbsync|shared_modules/rsync|shared_modules/utils|wazuh_modules/syscollector>")
         parser.add_argument("-c", "--coverage", help="Collect tests coverage and generates report. Example: python3 build.py -c <data_provider|shared_modules/dbsync|shared_modules/rsync|shared_modules/utils|wazuh_modules/syscollector>")
         parser.add_argument("-v", "--valgrind", help="Run valgrind on tests. Example: python3 build.py -v <data_provider|shared_modules/dbsync|shared_modules/rsync|shared_modules/utils|wazuh_modules/syscollector>")
+        parser.add_argument("-x", "--validation", help="Validate testools output. Example: python3 build.py -x <data_provider|shared_modules/dbsync|shared_modules/rsync|shared_modules/utils|wazuh_modules/syscollector>")
         parser.add_argument("--clean", help="Clean the lib. Example: python3 build.py --clean <data_provider|shared_modules/dbsync|shared_modules/rsync|shared_modules/utils|wazuh_modules/syscollector>")
         parser.add_argument("--cppcheck", help="Run cppcheck on the code. Example: python3 build.py --cppcheck <data_provider|shared_modules/dbsync|shared_modules/rsync|shared_modules/utils|wazuh_modules/syscollector>")
         parser.add_argument("--asan", help="Run ASAN on the code. Example: python3 build.py --asan <data_provider|shared_modules/dbsync|shared_modules/rsync|shared_modules/utils|wazuh_modules/syscollector>")
@@ -73,6 +74,9 @@ class CommandLineParser:
                 action = True
             if self._argIsValid(args.sformat):
                 utils.runAStyleFormat(args.sformat)
+                action = True
+            if self._argIsValid(args.validation):
+                utils.runValidation(args.validation)
                 action = True
             if not action:
                 parser.print_help()
